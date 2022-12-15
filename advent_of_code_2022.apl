@@ -10,6 +10,7 @@ letters ← ((⎕UCS 96+⍳26),⎕A)
 +/{letters⍳∪(2÷⍨≢⍵)(↓∩↑)⍵}¨a ⍝ first part
 +/{letters⍳∪⊃∩/⍵}¨((≢a)⍴1 2/1 0)⊂a ⍝ second part
 
+⍝ Day 4
 a←⊃⎕NGET'C:\Users\tokuo\Desktop\input4.txt' 1
 subset←{∨/(∧/⍵∊⍺)(∧/⍺∊⍵)}
 series←{(⍵[1]-1)↓⍳⍵[2]}¨↑{⍎¨¨'-'∘(≠⊆⊢)¨','(≠⊆⊢)⍵}¨a
