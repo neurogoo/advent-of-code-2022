@@ -16,3 +16,8 @@ subset←{∨/(∧/⍵∊⍺)(∧/⍺∊⍵)}
 series←{(⍵[1]-1)↓⍳⍵[2]}¨↑{⍎¨¨'-'∘(≠⊆⊢)¨','(≠⊆⊢)⍵}¨a
 +/subset/series ⍝ first part
 +/{∨/⍺∊⍵}/series ⍝ second part
+
+⍝ Day 6
+a←⊃⎕NGET'C:\Users\tokuo\Desktop\input6.txt' 1
+1↓2↑2+⍸4=≢⍤∪⍤⊢⌺4⊢⊃a ⍝ first part
+7+⍸14=≢⍤∪⍤⊢⌺14⊢⊃a ⍝ second part
