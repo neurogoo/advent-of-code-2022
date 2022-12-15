@@ -1,9 +1,8 @@
-
 ]box on
 ⍝ Day 1
 a←⊃⎕NGET'C:\Users\tokuo\Desktop\input1.txt' 1
 ⌈/(+/⍎¨)¨a⊆⍨''∘≢¨a ⍝ first part
-{+/3↑⍵[⍒⍵]}(+/⍎¨)¨a⊆⍨''∘≢¨a⌈ ⍝ second part
+{+/3↑⍵[⍒⍵]}(+/⍎¨)¨a⊆⍨''∘≢¨a ⍝ second part
 
 ⍝ Day 3
 a←⊃⎕NGET'C:\Users\tokuo\Desktop\input3.txt' 1
